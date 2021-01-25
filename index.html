@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <meta name="description" content="//TODO the description for the app">
+
+  <!-- TODO select theme color -->
+  <meta name="theme-color" content="#F0DB4E" />
+
+  <!-- TODO replace the icons -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/icon/pwa-js_192.png">
+
+  <!-- TODO replace the title -->
+  <title>PWA Starter - JS</title>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }    
+  </script>
+
+</head>
+
+<body>
+
+  <!-- TODO the body -->
+  <header>
+    <h1 class="centered">PWA - JS</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Static Section</h2>
+      <div>Static starter text content</div>
+    </section>
+
+    <section>
+      <h2>Dynamic Section</h2>
+      <div id="placeholder">placeholder for dynamic content</div>
+    </section>
+
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const container = document.querySelector("#placeholder");
+      window.setTimeout(() => {
+        container.innerHTML = "dynamic content from javascript";
+      }, 1000);
+    });
+  </script>
+
+</body>
+
+</html>
