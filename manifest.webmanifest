@@ -1,15 +1,15 @@
 {
-  "short_name": "PWA - JS",
-  "name": "PWA - JS Starter",
+  "short_name": "PWA - p5js",
+  "name": "PWA - p5.js Starter",
   "icons": [
     {
-      "src": "/icon/pwa-js_192.png",
+      "src": "/img/icon_192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon/pwa-js_512.png",
+      "src": "/img/icon_512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
@@ -18,7 +18,7 @@
   "start_url": "/",
   "display": "standalone",
 
-  "description": "Progressive Web App: Javascript Starter",
+  "description": "Progressive Web App: p5.js Starter",
   "background_color": "#F0DB4E",
   "theme_color": "#F0DB4E",
   "scope": "/",

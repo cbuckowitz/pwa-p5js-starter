@@ -12,14 +12,18 @@
   <meta name="description" content="//TODO the description for the app">
 
   <!-- TODO select theme color -->
-  <meta name="theme-color" content="#F0DB4E" />
+  <meta name="theme-color" content="#FFFFFF" />
 
   <!-- TODO replace the icons -->
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="/icon/pwa-js_192.png">
+  <link rel="apple-touch-icon" href="/img/icon_192.png">
 
   <!-- TODO replace the title -->
-  <title>PWA Starter - JS</title>
+  <title>PWA Starter - p5.js</title>
+
+  <!-- load p5.js -->
+  <script src="/lib/p5.min.js"></script>
+  <script src="/sketch.js"></script>
 
   <script>
     if ('serviceWorker' in navigator) {
@@ -39,30 +43,9 @@
 
   <!-- TODO the body -->
   <header>
-    <h1 class="centered">PWA - JS</h1>
+    <h1 class="centered">PWA - p5.js</h1>
   </header>
 
-  <main>
-    <section>
-      <h2>Static Section</h2>
-      <div>Static starter text content</div>
-    </section>
-
-    <section>
-      <h2>Dynamic Section</h2>
-      <div id="placeholder">placeholder for dynamic content</div>
-    </section>
-
-  </main>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const container = document.querySelector("#placeholder");
-      window.setTimeout(() => {
-        container.innerHTML = "dynamic content from javascript";
-      }, 1000);
-    });
-  </script>
 
 </body>
 

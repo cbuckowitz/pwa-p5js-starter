@@ -1,11 +1,14 @@
 const CACHE_NAME = 'url_cache';
-const VERSION = '0.0.5';
+const VERSION = '0.0.1';
 
 const CACHE_URLS = [
+  'manifest.webmanifest',
   '/',
   'favicon.ico',
-  'manifest.webmanifest',
-  'icon/pwa-js_192.png',
+  'img/icon_192.png',
+  'img/icon_512.png',
+  'lib/p5.min.js',
+  'sketch.js',
 ];
 
 // on installation of the service worker
